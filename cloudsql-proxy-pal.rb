@@ -5,20 +5,20 @@
 class CloudsqlProxyPal < Formula
   desc ""
   homepage "https://github.com/arnoldj-devops/homebrew-tools"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.0.0/cloudsql-proxy-pal_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "2b24da2799606076f9d36871ab4e46cf8aeeedda0c1a248fde6944075ae3c8d0"
+      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.1.0/cloudsql-proxy-pal_1.1.0_darwin_amd64.tar.gz"
+      sha256 "f5a199b0b0c393e4ea06472997fbc570ce750ddee24faf211a7949be12a37bd1"
 
       def install
         bin.install "cloudsql-proxy-pal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.0.0/cloudsql-proxy-pal_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "3f02cae81397807606a75f69937add40eb1c8cd31e28f826808b8db0edd50c82"
+      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.1.0/cloudsql-proxy-pal_1.1.0_darwin_arm64.tar.gz"
+      sha256 "e9336ff8f60f85aa0cdda125e5b89a98b50638c6ace43ee11ef664e34a855c92"
 
       def install
         bin.install "cloudsql-proxy-pal"
@@ -28,16 +28,16 @@ class CloudsqlProxyPal < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.0.0/cloudsql-proxy-pal_1.0.0_Linux_arm64.tar.gz"
-      sha256 "01dcf6ca2635928fbac98a7310449c3e1201b22920e04c9b0154a069ea9d17fe"
+      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.1.0/cloudsql-proxy-pal_1.1.0_linux_arm64.tar.gz"
+      sha256 "891f63159e57f9a7b403abf65af2aad398ceb8feeb8cd55d99d5007164160ce6"
 
       def install
         bin.install "cloudsql-proxy-pal"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.0.0/cloudsql-proxy-pal_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "85a65ccd5ee015cc89b83f4e4822a03d7598eaf190e78b70939c83b40d69679d"
+      url "https://github.com/arnoldj-devops/cloudsql-proxy-pal/releases/download/v1.1.0/cloudsql-proxy-pal_1.1.0_linux_amd64.tar.gz"
+      sha256 "f6d0a2b9e946846de491cf8f2f81515f73f04115d22a1579126ee76e38c03fdf"
 
       def install
         bin.install "cloudsql-proxy-pal"
